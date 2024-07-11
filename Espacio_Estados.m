@@ -87,7 +87,7 @@ Fv=[Bm*kr^2 0;0 0];
 E=T-Fv*dq;
 
 %% Ecuacion Diferencial
-dqq=eval(simplify((D^(-1))*(E-C*dq-G)));
+dqq=eval(simplify((D^(-1))*(E-C*dq-G)))
 syms v
 u=solve(dqq(1)-v,u);
 dqq=simplify(eval(dqq))
